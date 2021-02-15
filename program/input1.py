@@ -3,11 +3,11 @@ from PIL import Image
 import json
 import csv
 
-f = open('input.json' )
+f = open('inputset1/input.json' )
 data = json.load(f)
 l=[]
 for k in range(1,data['die']['columns']+1):
-    image= Image.open('wafer_image_'+str(k)+'.png')
+    image= Image.open('inputset1/wafer_image_'+str(k)+'.png')
     image_data = np.asarray(image)
 
 
